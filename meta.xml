@@ -1,0 +1,15 @@
+<meta>
+    <!-- TODO: Provide MTASA Resource information -->
+    <info author="" type="script" name="TypeScript Boilerplate" />
+
+    <!-- Bundle files -->
+    <script src="vendor/lualib_bundle.lua" cache="false" type="shared"/>
+
+    <!-- Compiled files -->
+    <script src="lua/example/utils.lua" type="server"/>
+    <script src="lua/example/server.lua" type="server"/>
+    <script src="lua/example/client.lua" cache="false" type="client"/>
+
+    <!-- Enables MTASA Classes -->
+    <oop>true</oop>
+</meta>
