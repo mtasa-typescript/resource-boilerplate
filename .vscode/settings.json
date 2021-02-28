@@ -1,0 +1,7 @@
+{
+    "triggerTaskOnSave.tasks": {
+        "npm: build": [
+            "src/**/*.ts"
+        ]
+    }
+}

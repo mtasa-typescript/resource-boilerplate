@@ -92,17 +92,34 @@ Below there are possible solutions to simplify it.
 
 ## VSCode
 
-TODO
+### Using documentation
+
+`Ctrl+Mouse Hover` is the shortcut to show documentation window.
+
+`Ctrl+Shift+Space` is the shortcut to show function's parameters.
+
+### Tasks
+
+Use `Ctrl+Shift+B` and select `npm: build` task to compilte the resource.
+
+### Trigger on save
+
+Plugin [Trigger Task On Save](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.triggertaskonsave)
+should be installed.
+
+Configuration provided in [.vscode/settings.json](.vscode/settings.json) and will be enabled by default.
 
 ## WebStorm
 
 ### Using documentation
 
-`Ctrl+P` is the shortcut to highlight function parameters and types of them.
+`Ctrl+Q` is the shortcut to show documentation window.
 
-`Ctrl+Q` is the shortcut to show documentation window
+`Ctrl+P` is the shortcut to highlight function's parameters.
 
 ### Configuration
+
+**NOTE**: In the current version configuration should have been loaded by default.
 
 In the top right corner press `Edit Configurations`. 
 Press `Add New Configuration` (Plus icon), select `npm` and select **build** in `Scripts` field.
@@ -112,6 +129,8 @@ Press `Add New Configuration` (Plus icon), select `npm` and select **build** in 
 Now you can press `Shift+F10` to compile your resource.
 
 ### File watcher
+
+**NOTE**: In the current version file watcher should have been loaded by default.
 
 Compile can be executed after file saving.
 
