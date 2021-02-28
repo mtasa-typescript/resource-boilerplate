@@ -1,0 +1,124 @@
+# TypeScript Resource Boilerplate for MTASA
+
+Write and compile TypeScript code to Lua. 
+
+A documentation in your IDE. Types safety. Linting. 
+
+**Features**
+
+- 🔥 [TypeScriptToLua](https://www.npmjs.com/package/typescript-to-lua)  
+Provides compilation.
+
+- 📓 [MTASA Lua Types](https://www.npmjs.com/package/mtasa-lua-types)  
+Provides types declarations and the documentation for MTASA Functions and classes.
+
+- ✅ [MTASA Lua Utils](https://www.npmjs.com/package/mtasa-lua-utils)  
+Provides code preparation and MTASA specific linting.
+  
+- ✒️ [Prettier](https://www.npmjs.com/package/prettier)  
+Code formatter
+  
+- ⌛ In the future: **ESLint** for linting TypeScript Code
+
+# Getting started
+
+## NodeJS
+
+This boilerplate requires NodeJS to be installed.
+If you already have NodeJS installed, skip this step.
+
+Installation for [Windows](https://nodejs.org/en/download/).
+
+Installation for Linux:
+
+*Debian or Ubuntu*
+
+```shell
+apt install nodejs
+```
+
+*Arch or Manjaro*
+
+```shell
+pacman -S nodejs
+```
+
+**How to check NodeJS installation**
+
+Open console
+[(What?)](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/#:~:text=Press%20Windows%2BR%20to%20open,open%20an%20administrator%20Command%20Prompt.)
+and execute the command
+
+```shell
+npm version
+```
+
+## Download boilerplate
+
+The boilerplate should be downloaded into the 
+[resources folder](https://wiki.multitheftauto.com/wiki/Resources#:~:text=This%20is%20located).
+
+You can use `git`:
+
+```shell
+git clone https://github.com/mtasa-typescript/resource-boilerplate.git
+git remote remove origin
+```
+
+Or you can download the boilerplate as a `.zip` archive:
+
+![Download as zip](https://i.imgur.com/Ml9YfUg.png)
+
+## Initialize the project
+
+Go to the project folder and execute command in the console:
+
+```shell
+npm install --save-dev
+```
+
+## Compile the project
+
+Command:
+
+```shell
+npm run build
+```
+
+Always running the command to build the resource is annoying. 
+Below there are possible solutions to simplify it.
+
+# Code Editor Preparation
+
+## VSCode
+
+TODO
+
+## WebStorm
+
+### Using documentation
+
+`Ctrl+P` is the shortcut to highlight function parameters and types of them.
+
+`Ctrl+Q` is the shortcut to show documentation window
+
+### Configuration
+
+In the top right corner press `Edit Configurations`. 
+Press `Add New Configuration` (Plus icon), select `npm` and select **build** in `Scripts` field.
+
+![Configuration](https://i.imgur.com/79iD3fW.png)
+
+Now you can press `Shift+F10` to compile your resource.
+
+### File watcher
+
+Compile can be executed after file saving.
+
+Open `Settings` -> `Tools` -> `File watchers`. 
+Add new file watcher for TypeScript files in project scope.
+Put **npm** into the `Script` field and **run build** into the `Srguments` field.
+
+![File Watcher](https://i.imgur.com/NuLtNH3.png)
+
+Thus, saving after editing TypeScript files triggers compilation. 
