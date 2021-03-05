@@ -9,7 +9,7 @@
     "ttypescript": "^1.5.12",
     "mtasa-lua-types": "^0.1.6",
     "mtasa-lua-utils": "^0.1.10",
-    "typescript": "^4.2.2",
+    "typescript": "^4.2.3",
     "typescript-to-lua": "^0.38.1"
   }
 }
