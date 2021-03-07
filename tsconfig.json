@@ -11,6 +11,7 @@
     "outDir": "lua",
     "paths": {
       // Path aliases
+      "@mtasa/*": ["./node_modules/mtasa-lua-types/types/mtasa/*"]
     },
     "plugins": [
       {
@@ -35,8 +36,4 @@
     // Provides debug.traceback function
     "sourceMapTraceback": true
   },
-  "exclude": [
-    "lua-no-import-transformer/**/*",
-    "util/**/*"
-  ]
 }
