@@ -9,9 +9,6 @@
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "lua",
-    "types": [
-      "lua-types/5.1"
-    ],
     "paths": {
       // Path aliases
     },
