@@ -3,13 +3,13 @@
  **/
 
 import { addEventHandler } from 'mtasa-lua-types/types/mtasa/client/function/event';
-import { resourceRoot } from 'mtasa-lua-types/types/mtasa/deprecated/MTA';
 import { outputChatBox } from 'mtasa-lua-types/types/mtasa/client/function/output';
-import { Element } from 'mtasa-lua-types/types/mtasa/client/oop/Element';
 import { getTime } from 'mtasa-lua-types/types/mtasa/client/function/world';
+import { resourceRoot } from 'mtasa-lua-types/types/mtasa/client/variables';
 
-addEventHandler('onClientResourceStart', resourceRoot as Element, function() {
+addEventHandler('onClientResourceStart', resourceRoot, function() {
     const [hours, minutes] = getTime();
+
     outputChatBox('TypeScript Resource Boilerplate works.' +
         `In-game time: ${hours}:${minutes}`);
 });
