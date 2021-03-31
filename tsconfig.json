@@ -19,6 +19,9 @@
         "after": false
       }
     ],
+    "types": [
+      "lua-types/5.1"
+    ],
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
@@ -34,5 +37,5 @@
     "luaLibImport": "none",
     // Provides debug.traceback function
     "sourceMapTraceback": true
-  },
+  }
 }
