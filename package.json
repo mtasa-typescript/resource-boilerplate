@@ -5,7 +5,7 @@
     "postbuild": "mtasa-utils-postbuild"
   },
   "dependencies": {
-    "lua-types": "^2.10.0",
+    "lua-types": "^2.10.1",
     "mtasa-lua-types": "^0.1.10",
     "mtasa-lua-utils": "^0.1.11"
   },
