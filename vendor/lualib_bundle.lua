@@ -549,7 +549,7 @@ function __TS__ObjectGetOwnPropertyDescriptors(object)
     if not metatable then
         return {}
     end
-    return rawget(metatable, "_descriptors")
+    return rawget(metatable, "_descriptors") or ({})
 end
 
 function __TS__Delete(target, key)
@@ -817,7 +817,11 @@ function __TS__Iterator(iterable)
         local iterator = iterable[Symbol.iterator](iterable)
         return __TS__IteratorIteratorStep, iterator
     else
-        return ipairs(iterable)
+        return __TS__Unpack(
+            {
+                ipairs(iterable)
+            }
+        )
     end
 end
 
@@ -1807,3 +1811,4 @@ function __TS__TypeOf(value)
     end
 end
 
+mtasa = _G
