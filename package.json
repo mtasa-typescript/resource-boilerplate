@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "lua-types": "^2.10.1",
-    "mtasa-lua-types": "^0.5.0",
+    "mtasa-lua-types": "^0.6.0",
     "mtasa-lua-utils": "^0.1.11"
   },
   "devDependencies": {
