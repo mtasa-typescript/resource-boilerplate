@@ -1,24 +1,22 @@
 # TypeScript Resource Boilerplate for MTASA
 
-Write and compile TypeScript code to Lua. 
+Write and compile TypeScript code to Lua.
 
-A documentation in your IDE. Types safety. Linting. 
+A documentation in your IDE. Types safety. Linting.
 
 **Features**
 
-- 🔥 [TypeScriptToLua](https://www.npmjs.com/package/typescript-to-lua)  
-Provides compilation.
+-   🔥 [TypeScriptToLua](https://www.npmjs.com/package/typescript-to-lua)  
+    Provides compilation.
 
-- 📓 [MTASA Lua Types](https://www.npmjs.com/package/mtasa-lua-types)  
-Provides types declarations and the documentation for MTASA Functions and classes.
+-   📓 [MTASA Lua Types](https://www.npmjs.com/package/mtasa-lua-types)  
+    Provides types declarations and the documentation for MTASA Functions and classes.
 
-- ✅ [MTASA Lua Utils](https://www.npmjs.com/package/mtasa-lua-utils)  
-Provides code preparation and MTASA specific linting.
-  
-- ✒️ [Prettier](https://www.npmjs.com/package/prettier)  
-Code formatter
-  
-- ⌛ In the future: **ESLint** for linting TypeScript Code
+-   ✅ [MTASA Lua Utils](https://www.npmjs.com/package/mtasa-lua-utils)  
+    Provides code preparation and MTASA specific linting.
+-   ✒️ [Prettier](https://www.npmjs.com/package/prettier)  
+    Code formatter
+-   ⌛ In the future: **ESLint** for linting TypeScript Code
 
 # Getting started
 
@@ -31,13 +29,13 @@ Installation for [Windows](https://nodejs.org/en/download/).
 
 Installation for Linux:
 
-*Debian or Ubuntu*
+_Debian or Ubuntu_
 
 ```shell
 apt install nodejs
 ```
 
-*Arch or Manjaro*
+_Arch or Manjaro_
 
 ```shell
 pacman -S nodejs
@@ -55,7 +53,7 @@ npm version
 
 ## Download boilerplate
 
-The boilerplate should be downloaded into the 
+The boilerplate should be downloaded into the
 [resources folder](https://wiki.multitheftauto.com/wiki/Resources#:~:text=This%20is%20located).
 
 You can use `git`:
@@ -85,7 +83,7 @@ Command:
 npm run build
 ```
 
-Always running the command to build the resource is annoying. 
+Always running the command to build the resource is annoying.
 Below there are possible solutions to simplify it.
 
 # Code Editor Preparation
@@ -121,7 +119,7 @@ Configuration provided in [.vscode/settings.json](.vscode/settings.json) and wil
 
 **NOTE**: In the current version configuration should have been loaded by default.
 
-In the top right corner press `Edit Configurations`. 
+In the top right corner press `Edit Configurations`.
 Press `Add New Configuration` (Plus icon), select `npm` and select **build** in `Scripts` field.
 
 ![Configuration](https://i.imgur.com/79iD3fW.png)
@@ -134,10 +132,10 @@ Now you can press `Shift+F10` to compile your resource.
 
 Compile can be executed after file saving.
 
-Open `Settings` -> `Tools` -> `File watchers`. 
+Open `Settings` -> `Tools` -> `File watchers`.
 Add new file watcher for TypeScript files in project scope.
 Put **npm** into the `Script` field and **run build** into the `Srguments` field.
 
 ![File Watcher](https://i.imgur.com/NuLtNH3.png)
 
-Thus, saving after editing TypeScript files triggers compilation. 
+Thus, saving after editing TypeScript files triggers compilation.

@@ -1,41 +1,37 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "lib": [
-      "es6"
-    ],
-    "module": "commonjs",
-    "strict": true,
-    "baseUrl": ".",
-    "rootDir": "src",
-    "outDir": "lua",
-    "paths": {
-      // Path aliases
+    "compilerOptions": {
+        "target": "ES6",
+        "lib": ["es6"],
+        "module": "commonjs",
+        "strict": true,
+        "baseUrl": ".",
+        "rootDir": "src",
+        "outDir": "lua",
+        "paths": {
+            // Path aliases
+        },
+        "plugins": [
+            {
+                // Removes "import"s and checks script side
+                "transform": "mtasa-lua-utils/transformer",
+                "after": false
+            }
+        ],
+        "types": ["lua-types/5.1"],
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true
     },
-    "plugins": [
-      {
-        // Removes "import"s and checks script side
-        "transform": "mtasa-lua-utils/transformer",
-        "after": false
-      }
-    ],
-    "types": [
-      "lua-types/5.1"
-    ],
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true
-  },
-  "tstl": {
-    // MTASA Lua Language version is 5.1
-    "luaTarget": "5.1",
-    // No "self" in global functions
-    "noImplicitSelf": true,
-    // Will not put 'require' into compiled files
-    "luaLibImport": "none",
-    // Provides debug.traceback function
-    "sourceMapTraceback": true
-  }
+    "tstl": {
+        // MTASA Lua Language version is 5.1
+        "luaTarget": "5.1",
+        // No "self" in global functions
+        "noImplicitSelf": true,
+        // Will not put 'require' into compiled files
+        "luaLibImport": "none",
+        // Provides debug.traceback function
+        "sourceMapTraceback": true
+    }
 }

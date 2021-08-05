@@ -8,8 +8,7 @@ import { outputChatBox } from 'mtasa-lua-types/types/mtasa/server/function/outpu
 import { firstLetterUpperCase } from './utils';
 import { root, source } from 'mtasa-lua-types/types/mtasa/server/variables';
 
-
-addEventHandler('onPlayerJoin', root, function() {
+addEventHandler('onPlayerJoin', root, function () {
     const player = source as unknown as Player;
 
     const name = firstLetterUpperCase(player.name);
