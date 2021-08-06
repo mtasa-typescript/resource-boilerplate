@@ -9,7 +9,7 @@
     "dependencies": {
         "lua-types": "^2.10.1",
         "mtasa-lua-types": "^0.6.1",
-        "mtasa-lua-utils": "^0.1.12"
+        "mtasa-lua-utils": "^0.2.2"
     },
     "devDependencies": {
         "prettier": "^2.3.0",
