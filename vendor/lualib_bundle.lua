@@ -21,6 +21,20 @@ function __TS__ArrayConcat(arr1, ...)
     return out
 end
 
+function __TS__ArrayEntries(array)
+    local key = 0
+    return {
+        [Symbol.iterator] = function(self)
+            return self
+        end,
+        next = function(self)
+            local result = {done = array[key + 1] == nil, value = {key, array[key + 1]}}
+            key = key + 1
+            return result
+        end
+    }
+end
+
 function __TS__ArrayEvery(arr, callbackfn)
     do
         local i = 0
@@ -1231,6 +1245,30 @@ function __TS__ObjectValues(obj)
         result[#result + 1] = obj[key]
     end
     return result
+end
+
+function __TS__OptionalChainAccess(____table, key)
+    if ____table then
+        return ____table[key]
+    end
+    return nil
+end
+
+function __TS__OptionalFunctionCall(f, ...)
+    if f then
+        return f(...)
+    end
+    return nil
+end
+
+function __TS__OptionalMethodCall(____table, methodName, ...)
+    if ____table then
+        local method = ____table[methodName]
+        if method then
+            return method(____table, ...)
+        end
+    end
+    return nil
 end
 
 function __TS__ParseFloat(numberString)
