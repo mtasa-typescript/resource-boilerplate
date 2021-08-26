@@ -7,6 +7,7 @@ import { Player } from 'mtasa-lua-types/types/mtasa/server/oop/Player';
 import { outputChatBox } from 'mtasa-lua-types/types/mtasa/server/function/output';
 import { firstLetterUpperCase } from './utils';
 import { root, source } from 'mtasa-lua-types/types/mtasa/server/variables';
+import {mtasa} from 'mtasa-lua-types/types/mtasa/server'; 
 
 addEventHandler('onPlayerJoin', root, function () {
     const player = source as unknown as Player;

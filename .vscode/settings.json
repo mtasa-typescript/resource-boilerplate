@@ -3,5 +3,10 @@
         "npm: build": ["src/**/*.ts"]
     },
     "typescript.tsdk": "node_modules/typescript/lib",
-    "typescript.preferences.includePackageJsonAutoImports": "on"
+    "typescript.preferences.includePackageJsonAutoImports": "on",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/mtasa-typescript/mtasa-lua-utils/35c60d06a12b12351df5ce8024880dd77aba63ff/mtasa-meta.schema.json": "mtasa-meta.yml"
+    },
+    "redhat.telemetry.enabled": false
 }
