@@ -14,5 +14,3 @@ addEventHandler<Event.OnClientResourceStart>(EventNames.OnClientResourceStart, r
 
     outputChatBox('TypeScript Resource Boilerplate works.' + `In-game time: ${hours}:${minutes}`);
 });
-
-

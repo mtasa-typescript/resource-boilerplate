@@ -1,6 +1,3 @@
 {
-    "recommendations": [
-        "gruntfuggly.triggertaskonsave",
-        "redhat.vscode-yaml"
-    ]
+    "recommendations": ["gruntfuggly.triggertaskonsave", "redhat.vscode-yaml"]
 }

@@ -1,21 +1,20 @@
 info:
-  name: TypeScriptProject
-  type: script
+    name: TypeScriptProject
+    type: script
 
 compilerConfig:
-  srcDir: TypeScriptProject
+    srcDir: TypeScriptProject
 
 scripts:
-  - src: client.ts
-    type: client
-    cache: false
-  
-  - src: server.ts
-    type: server
-    cache: false
+    - src: client.ts
+      type: client
+      cache: false
 
-  - src: utils.ts
-    type: shared
-    cache: false
+    - src: server.ts
+      type: server
+      cache: false
 
+    - src: utils.ts
+      type: shared
+      cache: false
 # You can add more resources. Just type --- and continue
