@@ -1,9 +1,9 @@
 info:
-    name: TypeScriptProject
+    name: TypeScriptResource
     type: script
 
 compilerConfig:
-    srcDir: TypeScriptProject
+    srcDir: TypeScriptResource
 
 scripts:
     - src: client.ts
