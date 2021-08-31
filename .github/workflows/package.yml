@@ -30,7 +30,7 @@ jobs:
                       ${{ runner.os }}-build-${{ env.cache-name }}-
                       ${{ runner.os }}-build-
                       ${{ runner.os }}-
-            - run: npm ci
+            - run: npm install
             - run: npm run build
     prettier:
         runs-on: ubuntu-latest
@@ -53,7 +53,7 @@ jobs:
                       ${{ runner.os }}-build-${{ env.cache-name }}-
                       ${{ runner.os }}-build-
                       ${{ runner.os }}-
-            - run: npm ci
+            - run: npm install
             - run: npm run prettier
     eslint:
         runs-on: ubuntu-latest
@@ -76,5 +76,5 @@ jobs:
                       ${{ runner.os }}-build-${{ env.cache-name }}-
                       ${{ runner.os }}-build-
                       ${{ runner.os }}-
-            - run: npm ci
+            - run: npm install
             - run: npm run eslint

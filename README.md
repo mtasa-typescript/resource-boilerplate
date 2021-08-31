@@ -6,16 +6,16 @@ A documentation in your IDE. Types safety. Linting.
 
 **Features**
 
-- 🔥 [TypeScriptToLua](https://www.npmjs.com/package/typescript-to-lua)  
-    Provides compilation
-- 📓 [MTASA Lua Types](https://www.npmjs.com/package/mtasa-lua-types)  
-    Provides types declarations and the documentation for MTASA functions, variables and classes
-- ✅ [MTASA Lua Utils](https://www.npmjs.com/package/mtasa-lua-utils)  
-    Provides code preparation and MTASA specific linting
-- ✒️ [Prettier](https://www.npmjs.com/package/prettier)  
-    Code formatter
-- 👀 [ESLint](https://eslint.org/)  
-    ESLint for linting TypeScript Code
+-   🔥 [TypeScriptToLua](https://www.npmjs.com/package/typescript-to-lua)  
+     Provides compilation
+-   📓 [MTASA Lua Types](https://www.npmjs.com/package/mtasa-lua-types)  
+     Provides types declarations and the documentation for MTASA functions, variables and classes
+-   ✅ [MTASA Lua Utils](https://www.npmjs.com/package/mtasa-lua-utils)  
+     Provides code preparation and MTASA specific linting
+-   ✒️ [Prettier](https://www.npmjs.com/package/prettier)  
+     Code formatter
+-   👀 [ESLint](https://eslint.org/)  
+     ESLint for linting TypeScript Code
 
 # Getting started
 
