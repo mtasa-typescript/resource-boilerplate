@@ -17,4 +17,6 @@ scripts:
     - src: utils.ts
       type: shared
       cache: false
-# You can add more resources. Just type --- and continue
+#
+# You can add more resources. Use `npm run new-resource`
+#

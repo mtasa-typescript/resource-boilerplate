@@ -3,28 +3,29 @@
     "compilerOptions": {
         "target": "ES6",
         "lib": ["es6"],
-        "module": "commonjs",
-        "strict": true,
-        "baseUrl": ".",
+        "module": "CommonJS",
         "rootDir": "src",
         "outDir": "[lua]",
-        "types": ["lua-types/5.1"],
-        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "sourceMap": true,
+        "declaration": true,
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": true,
-        "strictFunctionTypes": true
+        "noImplicitReturns": true,
+        "esModuleInterop": true,
+        "newLine": "LF",
+        "stripInternal": true,
+        "baseUrl": ".",
+        "types": ["lua-types/5.1"]
     },
     "tstl": {
         // MTASA Lua Language version is 5.1
         "luaTarget": "5.1",
         // No "self" in global functions
         "noImplicitSelf": true,
-        // Will not put 'require' into compiled files
-        "luaLibImport": "always",
         // Provides debug.traceback function
         "sourceMapTraceback": true,
-        // Verbose mode
-        "tstlVerbose": true
+        // Lualib should be always included in the resource
+        "luaLibImport": "always"
     }
 }
