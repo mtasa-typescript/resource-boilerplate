@@ -2,16 +2,23 @@
  * File with server-side script example
  **/
 
-import { addEventHandler } from 'mtasa-lua-types/types/mtasa/server/function/event';
-import { Player } from 'mtasa-lua-types/types/mtasa/server/oop/Player';
-import { outputChatBox } from 'mtasa-lua-types/types/mtasa/server/function/output';
+import { EventNames } from 'mtasa-lua-types/types/mtasa/server/event/all_event_names';
+import { Event } from 'mtasa-lua-types/types/mtasa/server/mtasa';
 import { firstLetterUpperCase } from './utils';
-import { root, source } from 'mtasa-lua-types/types/mtasa/server/variables';
 import { mtasa } from 'mtasa-lua-types/types/mtasa/server';
 
-addEventHandler('onPlayerJoin', root, function () {
-    const player = source as unknown as Player;
+mtasa.addEventHandler<Event.OnPlayerJoin>(
+    EventNames.OnPlayerJoin,
+    mtasa.root,
+    function () {
+        const player = mtasa.source as unknown as mtasa.Player;
 
-    const name = firstLetterUpperCase(player.name);
-    outputChatBox(`Welcome, ${name}!`);
+        const name = firstLetterUpperCase(player.name);
+        mtasa.outputChatBox(`Welcome, ${name}!`);
+    },
+);
+
+mtasa.addCommandHandler('typescript-example-command', function (player) {
+    player.money += 1;
+    mtasa.outputChatBox(`+1$ to ${player.name}`);
 });
