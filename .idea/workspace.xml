@@ -11,5 +11,36 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="eslint" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eslint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prettier-fix" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier-fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.prettier-fix" />
+      <item itemvalue="npm.eslint" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.eslint" />
+        <item itemvalue="npm.prettier-fix" />
+      </list>
+    </recent_temporary>
   </component>
 </project>
