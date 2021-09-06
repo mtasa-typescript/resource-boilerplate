@@ -2,10 +2,10 @@
  * File with server-side script example
  **/
 
-import { EventNames } from 'mtasa-lua-types/types/mtasa/server/event/all_event_names';
-import { Event } from 'mtasa-lua-types/types/mtasa/server/mtasa';
+import { EventNames } from 'mtasa-lua-types/server/event/all_event_names';
+import { Event } from 'mtasa-lua-types/server/mtasa';
 import { firstLetterUpperCase } from './utils';
-import { mtasa } from 'mtasa-lua-types/types/mtasa/server';
+import { mtasa } from 'mtasa-lua-types/server';
 
 mtasa.addEventHandler<Event.OnPlayerJoin>(
     EventNames.OnPlayerJoin,

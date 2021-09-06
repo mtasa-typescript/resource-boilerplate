@@ -1,4 +1,4 @@
-# TypeScript Resource Boilerplate for MTASA
+# 📄 TypeScript Resource Boilerplate for MTASA
 
 Write and compile TypeScript into MTASA-compatible Lua code.
 
@@ -17,9 +17,9 @@ A documentation in your IDE. Types safety. Linting.
 -   👀 [ESLint](https://eslint.org/)  
      ESLint for linting TypeScript Code
 
-# Getting started
+# 🎈 Getting started
 
-## NodeJS
+## 💠 NodeJS
 
 This boilerplate requires NodeJS (at least **14.x**) to be installed.
 If you already have NodeJS installed, skip this step.
@@ -50,7 +50,7 @@ and execute the command
 npm version
 ```
 
-## Create new project (initialize boilerplate)
+## 🆕 Create new project (initialize boilerplate)
 
 Open terminal in the parent folder of your new project and run folowwing command:
 
@@ -84,7 +84,7 @@ npm run build
 Always running the command to build the resource is annoying.
 Below there are possible solutions to simplify it.
 
-# Code Editor Preparation
+# ✏ Code Editor Preparation
 
 ## VSCode
 
