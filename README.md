@@ -146,3 +146,7 @@ Put **npm** into the `Script` field and **run build** into the `Srguments` field
 ![File Watcher](https://i.imgur.com/NuLtNH3.png)
 
 Thus, saving after editing TypeScript files triggers compilation.
+
+# 🚁 Support
+
+[Discord Server](https://discord.com/invite/67vxSwhRT4)
