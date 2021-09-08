@@ -73,6 +73,8 @@ npx mtasa-lua-utils new-project
 |- mtasa-meta.yml             Description for all resources (meta.xml analog)
 ```
 
+[**All available commands**](https://github.com/mtasa-typescript/mtasa-lua-utils#available-commands)
+
 ## Compile the project
 
 Command:
