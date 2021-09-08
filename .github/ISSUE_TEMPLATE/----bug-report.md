@@ -1,15 +1,17 @@
 ---
-name: ' ⚠️ Bug report'
+name: '⚠️ Bug report'
 about: Create a report to help us improve
-title: ' ⚠️ Name of the issue'
+title: '⚠️ Name of the issue'
 labels: bug
 assignees: ''
 ---
 
-**Describe the bug**
+# Describe the bug
+
 A clear and concise description of what the bug is.
 
-**To Reproduce**
+## To Reproduce
+
 Steps to reproduce the behavior:
 
 1. Go to '...'
@@ -17,16 +19,19 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
-**Expected behavior**
+## Expected behavior
+
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
+## Screenshots
+
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
+# Desktop information
+
 Provide you OS version information
 
-**NPM Version**
+## NPM Version
 
 <!--Run `npm version` command -->
 
@@ -34,7 +39,7 @@ Provide you OS version information
 Paste result here
 ```
 
-**NPM Package versions**
+## NPM Package versions
 
 <!--Run `npm list --depth 0` command -->
 
@@ -42,5 +47,6 @@ Paste result here
 Paste result here
 ```
 
-**Additional context**
+# Additional context
+
 Add any other context about the problem here.

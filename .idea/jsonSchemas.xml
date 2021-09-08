@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="mtasa-meta.schema">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="mtasa-meta.schema" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/mtasa-typescript/mtasa-lua-utils/feature/toolchain/mtasa-meta.schema.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="mtasa-meta.yml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>

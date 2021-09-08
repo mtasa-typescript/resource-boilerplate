@@ -1,0 +1,22 @@
+info:
+    name: TypeScriptResource
+    type: script
+
+compilerConfig:
+    srcDir: TypeScriptResource
+
+scripts:
+    - src: client.ts
+      type: client
+      cache: false
+
+    - src: server.ts
+      type: server
+      cache: false
+
+    - src: utils.ts
+      type: shared
+      cache: false
+#
+# You can add more resources. Use `npm run new-resource`
+#
